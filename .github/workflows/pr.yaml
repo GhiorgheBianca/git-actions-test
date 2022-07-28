@@ -10,7 +10,7 @@ jobs:
   build:
     name: Auto-approve
     runs-on: ubuntu-latest
-    if: github.event.pull_request.user.login == 'GhiorgheBianca' && contains(github.ref, 'abc/req')
+    if: github.event.pull_request.user.login == 'vladfrunzescu' && contains(github.ref, 'abc/req')
     steps:
       - uses: actions/github-script@v4
         with:
